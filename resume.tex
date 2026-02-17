@@ -1,7 +1,7 @@
 % resume.tex
 % vim:set ft=tex spell:
 
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
@@ -11,6 +11,12 @@
 \usepackage{paralist}
 \usepackage{tasks}
 \usepackage{exsheets}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=[RGB]{0,0,238},   
+    urlcolor=[RGB]{0,0,238},
+    }
 \SetupExSheets[question]{type=exam}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -47,51 +53,29 @@
 \begin{document}
 
 \begin{center}
-{\LARGE \textbf{Duy H. Le}}
+{\LARGE \textbf{Duy Le}}
+\vspace{0.6em}
 \end{center}
 	\headerrow
 		{\emph{Austin, TX}}
 		{\emph{duylezero@gmail.com}}
+	\begin{center}
+		\vspace{-1.8em}
+		{\href{https://www.linkedin.com/in/duyhale/}{\textbf{LinkedIn}}}
+	\end{center}
 \hrule
-\vspace{-0.8em}
-\subsection*{Education}
-
+\vspace{-0.4em}
+\subsection*{}
+	\vspace{-1em}
 	\headerrow
 		{\textbf{Texas A\&M University}}
 		{\textbf{College Station, Texas}}
 	\\
 	\headerrow
-		{\emph{Dwight Look College of Engineering, B.S. Computer Science}}
+		{\emph{\textbf{B.S. Computer Science} - Dwight Look College of Engineering}}
 		{\emph{2016 -- 2019}}
 	\vspace{-0.4em}
 		 \textbf{Minor}: Mathematics, Cybersecurity \\
-
-\hrule
-\vspace{-0.8em}
-\subsection*{Core Technical Skills}
-\vspace{-0.4em}
-\begin{indentsection}{\parindent}
-\hyphenpenalty=1000
-\begin{description*}
-	\item[Languages:]
-	\begin{inparaitem}[\ * \ ]
-		 Java
-		\item JS/TS
-		\item C\#
-		\item Python 3
- 		\item \CPP \ 
-		\item SQL
-	\end{inparaitem}
-	\item[Tools/Technologies:]
-		\begin{inparaitem}[\ * \ ]
- 		 Angular
-		\item React 
-		\item Spring Boot
-		\item .NET
-		\item Azure/AWS/GCP
-	\end{inparaitem}
-\end{description*}
-\end{indentsection}
 
 \hrule
 \vspace{-0.8em}
@@ -103,13 +87,21 @@
 		{\textbf{Boulder, CO / Austin, TX}}
 	\\
 	\headerrow
-		{\emph{Software Engineer}}
+		{\emph{Software Engineer - \textbf{Drive GenAI Find}}}
 		{\emph{July 2022 - Present}}
 	\begin{itemize*}
-		\item Tangibly improved Drive Search through UI enhancements, latency reduction, and quality improvements using an experiment-minded approach
-		\item Pioneered deep dives into experiment-first development to convert product requirements into measureable features with actionable improvements
-		\item Delivered GenAI features, monitored quality, and investigated potential headroom for improvements
-		\item Ideated, researched, and delivered a 30\% storage indexing reduction that also increased recall accuracy
+		\item Delivered features aimed to promote user engagement such as folder summaries and side panel enhancements
+		\item Used expertise in Drive's full Search stack to deliver AI enhancements to Search results and quality improvements
+                   \item Consistently challenged data quality by auditing impression logging and user feedback
+	\end{itemize*}
+	\headerrow
+		{\emph{Software Engineer - \textbf{Drive Search}}}
+		{}
+	\begin{itemize*}
+		\item Tangibly improved the user search experience by delivering QOL UI enhancements
+		\item Became the domain expert in the full Search stack, leading design direction and driving leadership decisions
+		\item Joined a small tiger team focused on reducing p95 e2e latency, achieving an 83\% improvement
+		\item Ideated, researched, and delivered a 30\% indexing reduction that improved storage efficiency and recall accuracy
 	\end{itemize*}
 \end{indentsection}
 \begin{indentsection}{\parindent}
@@ -160,37 +152,33 @@
 	\end{itemize*}
 \end{indentsection}
 
-\vspace{-1.8em}
-\subsection*{Research}
+\hrule
+\vspace{-0.8em}
+\subsection*{Core Technical Skills}
+\vspace{-0.4em}
 \begin{indentsection}{\parindent}
-	\vspace{-0.4em}
-	\headerrow
-		{\textbf{Multi-Robotics Lab (Dr. Dylan Shell)}}
-		{\textbf{College Station, TX}}
-	\\
-	\headerrow
-		{\emph{Research Assistant}}
-		{\emph{August 2017 - June 2018}}
-	\begin{itemize*}
-		\item Compared two BlackJack game policies with the goal of finding optimal play 
-		\item Analyzed and discussed papers on integrating topology with robot pathfinding
-		\item Shadowed graduate students and participated in discussions on robotics and theory
-	\end{itemize*}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	\begin{inparaitem}[\ * \ ]
+		 Java
+		\item JS/TS
+		\item C\#
+		\item Python 3
+ 		\item \CPP \ 
+		\item SQL
+	\end{inparaitem}
+	\item[Tools/Technologies:]
+		\begin{inparaitem}[\ * \ ]
+ 		 Angular
+		\item React 
+		\item Spring Boot
+		\item .NET
+		\item Azure/AWS/GCP
+	\end{inparaitem}
+\end{description*}
 \end{indentsection}
 
-\vspace{-1.8em}
-\subsection*{Leadership}
-\begin{indentsection}{\parindent}
-	\vspace{-0.4em}
-	\headerrow
-		{\textbf{Philippine Student Association}}
-		{\textbf{College Station, TX}}
-		\\
-	\headerrow
-		{\emph{President}}
-		{\emph{August 2018 - May 2019}}
-
-\end{indentsection}
 \newif\ifdraft
 \draftfalse % or \drafttrue
 
